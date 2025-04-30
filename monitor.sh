@@ -16,7 +16,7 @@ df -h --total | awk '/total/{print "Total Disk: "$2", Used: "$1", Free: "$1}'
 echo
 
 check_updates() {
-    echo "Checking for system updates..."
+    echo "Checking for system updates...."
     sudo apt update && sudo apt list --upgradable
 }
 
